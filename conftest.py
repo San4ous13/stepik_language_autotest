@@ -17,7 +17,7 @@ def browser(request):
     yield browser
 
 @pytest.fixture(scope="function")
-def browser(request):
+def browser2(request):
     browser_name = request.config.getoption("browser_name")
     browser = None
     if browser_name == "chrome":
